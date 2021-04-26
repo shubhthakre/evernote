@@ -4,6 +4,7 @@ import styles from './styles';
 import List from '@material-ui/core/List';
 import { Divider, Button } from '@material-ui/core';
 import SidebarItemComponent from '../sidebarItem/sidebarItem';
+import Darkmode from '../Darkmode';
 
 class SidebarComponent extends React.Component {
   constructor() {
@@ -21,6 +22,7 @@ class SidebarComponent extends React.Component {
     if(notes) {
       return(
         <div className={classes.sidebarContainer}>
+        <Darkmode className={classes.newNoteBtn}/>
           <Button
             onClick={this.newNoteBtnClick}
             className={classes.newNoteBtn}>{this.state.addingNote ? 'Cancel' : 'New Note'}</Button>

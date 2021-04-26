@@ -1,10 +1,30 @@
+
+:root {
+  --blue : rgb(118, 40, 219);
+  --white : rgb (236,236,236);
+ }
+ body.light{
+   --background-color : var(--white);
+   --text-color : var(--black);
+   --font-weight:400;
+   /* --img:url("./moon.png"); */
+ }
+ 
+ body.dark{
+   --background-color : var(--blue);
+   --text-color : var(--white);
+   --font-weight:600;
+   /* --img:url(""); */
+ 
+ }
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "ubuntu" ,sans-serif;
+background: var(--background-color);
+color:var(--text-color);
+font-weight: var(--font-weight);
+transition : background 0.3s ease-in-out , color 0.6s ease-in-out;
 }
 
 code {

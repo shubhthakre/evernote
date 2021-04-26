@@ -6,6 +6,7 @@ import firebase from 'firebase/app';
 
 
 
+
  class App extends React.Component {
 
    constructor(){
@@ -20,7 +21,8 @@ import firebase from 'firebase/app';
   render() {
     return (
       <div className="app-conatainer">
-
+      
+      
       <SidebarComponent
       selectedNoteIndex ={this.state.selectedNoteIndex}
       notes ={this.state.notes}
